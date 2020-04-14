@@ -8,6 +8,7 @@
         body {
             background-color: #F8F8F8;
             text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
             main {
                 display: inline-block;
@@ -16,8 +17,6 @@
                 text-align: left;
             }
                 main > header {
-                    display: inline-block;
-                    width: 100%;
                     float: left;
                 }
                     main > header > img {
@@ -30,11 +29,17 @@
                     }
                         main > header > nav > a {
                             display: inline-block;
-                            padding: 15px;
+                            padding-right: 15px;
+                            padding-left: 15px;
+                            padding-top: 5px;
+                            padding-bottom: 5px;
+                            color: grey;
+                            font-size: 20px;
+                            line-height: 20px;
+                            text-decoration: none;
+                            text-transform: capitalize;
                         }
                 main > section {
-                    display: inline-block;
-                    width: 100%;
                     float: left;
                 }
                     main > section > div {
@@ -44,14 +49,10 @@
                         margin-top: 20px;
                     }
                         main > section > div > h1 {
-                            display: inline-block;
-                            width: 100%;
                             margin: 0;
                             font-size: 100px;
                         }
                         main > section > div > p {
-                            display: inline-block;
-                            width: 100%;
                             margin: 0;
                             font-size: 24px;
                         }
@@ -60,24 +61,34 @@
                         width: 45%;
                         float: right;
                     }
+        .mygtukas {
+            background-color: #fff;
+            text-transform: uppercase;
+            border: 2px solid #555;
+            border-radius: 17px;
+        }
+        .visasPlotis {
+            display: inline-block;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <main>
-        <header>
+        <header class="visasPlotis">
             <img src="./img/logo.png" alt="Mergaites logo">
             <nav>
                 <a href="#">Home</a>
-                <a href="#">Tracks</a>
-                <a href="#">Library</a>
+                <a href="#">tracks</a>
+                <a href="#">library</a>
                 <a href="#">Community</a>
-                <a href="#">Sign in</a>
+                <a href="#" class="mygtukas">Sign in</a>
             </nav>
         </header>
-        <section>
+        <section class="visasPlotis">
             <div>
-                <h1>404</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, adipisci?</p>
+                <h1 class="visasPlotis">404</h1>
+                <p class="visasPlotis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, adipisci?</p>
             </div>
             <img src="./img/mergaite.png" alt="Liudna mergaite">
         </section>
